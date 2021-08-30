@@ -15,6 +15,7 @@ public class Solution {
 	  		ListNode ptr1 = l1; 
 	  		while (ptr1!=null) {
 	  			System.out.print(ptr1.val + " -> ");
+	  			System.out.println("");
 	  		}
 	  	}
 	 
@@ -25,6 +26,9 @@ public class Solution {
 	        ListNode l3 = new ListNode(); 
 	        ListNode ptr3 = l3; 
 	        while(ptr1 != null && ptr2 != null){
+	        	System.out.print("L1: "); print(l1);
+	        	System.out.print("L2: "); print(l2);
+	        	System.out.print("L3: "); print(l3);
 	            if(ptr3!=null){
 	                if(ptr1.val >= ptr2.val){
 	                    ptr3.next = ptr2; 
@@ -55,7 +59,7 @@ public class Solution {
 	        if(ptr2!= null)
 	            ptr3.next = ptr2;
 	        
-	        return l3; 
+	        return l3.next; 
 	    }
 }
 
